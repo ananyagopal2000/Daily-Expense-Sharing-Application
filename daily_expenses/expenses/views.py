@@ -245,14 +245,3 @@ class InputValidation(APIView):
 
         return Response({"message": "Valid users"}, status=status.HTTP_200_OK)
 
-#controller, service, model\\
-# main apis descrption\\
-# #api endpoints - 1 line explain \\
-# curl command in postmn= has request body and respons - 
-# future improvements - authentication and token authentication, optimix=zation,
-# way implementation - locally testedafter each checkpoint of code,  api endpoints were working 
-# gitclone the code
-# go to this directory
-# #generate requirements.txt file    
-        
-
