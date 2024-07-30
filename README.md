@@ -207,5 +207,12 @@ curl --location 'http://127.0.0.1:8000/api/input_validation/' \
 }
 ```
 
+## Future Enhancements
+If I were to be given more time to execute this project, I would:
+- Implement Authorization and Authentication services for the user using tokens. This would enhance the overall security and trustworthiness of the application.
+- Implements unit test cases. Although the code was locally tested after each checkpoint and verified the working conditions of the API endpoints before moving to implement the logical chunk of code, I would implement unit test cases using unittestcase in python for clarity during integration tests
+- develop an end -to-end mobile application that would have features like logging in and logging out of users, create rooms and add-split expenses within the room, add a payment inerface to make payments quick and hassle free.
+
+
 
 
