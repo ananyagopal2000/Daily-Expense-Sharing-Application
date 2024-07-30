@@ -1,4 +1,47 @@
 
+# Daily Expense Sharing Application
+
+The Daily Expense Sharing Application is designed to facilitate the management and sharing of expenses among groups of users. This application helps users keep track of who owes what to whom, ensuring a fair distribution of shared costs and accountablity.
+
+## Key features
+### 1. User Management
+- **Create User** : Creates a and stores user details such as name, email id and pone number
+
+- **Retrieve User** : Enables users to view their personal account information.
+
+### 2. Expense Management
+- **Add Expense** : Users can add new expenses by specifying the amount, split method (equal, exact, or percentage), and involved members using their email addresses.
+
+- **Retrieve Individual User expenses** : Allows users to view their personal expenses, including the total amount paid solely, the actual amount after the split, total amount they owe and the total amount they are owed.
+
+- **Retrieve Overall expense** : Provides the user a comprehensive amount that includes the total amount they owe and the total amount they are owed.
+
+- **Download Balance sheet** : Users can download a balance sheet that summarizes individual, showing the balance for each user
+
+### 3. Input Validation
+- Validates user inputs to ensure they are accurate and consistent.
+
+- Ensures that percentages in the percentage split method add up to 100%, guaranteeing an equitable distribution of expenses.
+
+## Implementation details
+
+- **Models** : The application uses Django models for managing users (**User**), expenses (**Expense**), and split details (**SplitDetails**).
+    - **`User`**: model contains user details like name, email id and phone number
+    - **`Expense`**: model includes fields for the creator, expense ID, amount, split method, and date.
+    - **`SplitDetails`** : model contains fields for the expense, creator, member, amount paid, amount owed, status, and date.
+
+- **API Endpoints** :
+    - **User Endpoints** :
+        - **`Create User`** : API to create new user
+        - **`Retrieve User Details`** : API to retrieve details of existing user
+    - **Expense Endpoints** :
+        - **`Add Expense`** : API to create new user
+        - **`Retrieve Individual User Expense`** : API to retrieve details of all expense a particular user is involved in
+        - **`Retrieve Overall Expenses`** : API to retrieve overall expense details of a particular user
+        - **`Download Balance Sheet`** : API to download the balance sheet that summarizes expenses
+    - **Validation Endpoints** :
+        - **`Input Validaition`**: API to validate the users and percentages if present
+
 ## Setup and Installation Instructions
     
 ### 1. Clone Repository
